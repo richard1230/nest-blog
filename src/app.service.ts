@@ -3,10 +3,9 @@ import { BlogService } from './blog.service'
 
 @Injectable()
 export class AppService {
-  
-  constructor(private readonly blog: BlogService) {}
+  // constructor(private readonly blog: BlogService) {}
   getHello(): string {
-    return this.blog.finfOne()
-    // return 'Hello World!'
+    // return this.blog.finfOne()
+    return 'Hello World!'
   }
 }

@@ -7,12 +7,12 @@ import { BlogService } from './blog.service'
   imports: [],
   controllers: [AppController],
   providers: [
-    AppService,
-    BlogService,
-    // {
-    //   provide: BlogService,
-    //   useClass: BlogService,
-    // },
+    // AppService,
+    // BlogService,
+    {
+      provide: 'blog',
+      useClass: AppService,
+    },
   ],
 })
 export class AppModule {}
